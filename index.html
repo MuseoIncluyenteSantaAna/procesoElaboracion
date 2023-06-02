@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Proceso de Elaboración del Mezcal</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Estilos adicionales para la página emergente */
+    .popup-content {
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .popup-image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    
+    .popup-description {
+      margin-bottom: 20px;
+    }
+    
+    .popup-button {
+      display: inline-block;
+      background-color: #337ab7;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  </style>
+  <script>
+    // Función para mostrar la página emergente al hacer clic en el botón
+    function showPopup() {
+      $('#popup').modal('show');
+    }
+  </script>
+</head>
+<body>
+  <!-- Resto de tu código HTML -->
+
+  <!-- Contenido del botón "Proceso de elaboración" -->
+  <div class="section-left">
+    <img src="10.jpg" alt="Imagen izquierda">
+    <p>Conoce nuestro proceso de elaboración</p>
+    <a href="#" class="button" onclick="showPopup()">Click aquí</a>
+  </div>
+
+  <!-- Página emergente -->
+  <div class="modal fade" id="popup" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content popup-content">
+        <h2 class="section-title">Proceso de Elaboración del Mezcal</h2>
+        
+        <!-- Primera sección del proceso -->
+        <div class="popup-section">
+          <img src="imagen1.jpg" alt="Imagen 1" class="popup-image">
+          <p class="popup-description">Descripción del paso 1</p>
+          <audio controls>
+            <source src="sonido1.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        
+        <!-- Segunda sección del proceso -->
+        <div class="popup-section">
+          <img src="imagen2.jpg" alt="Imagen 2" class="popup-image">
+          <p class="popup-description">Descripción del paso 2</p>
+          <audio controls>
+            <source src="sonido2.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        
+        <!-- Tercera sección del proceso -->
+        <div class="popup-section">
+          <img src="imagen3.jpg" alt="Imagen 3" class="popup-image">
+          <p class="popup-description">Descripción del paso 3</p>
+          <audio controls>
+            <source src="sonido3.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        
+        <!-- Botón para cerrar la página emergente -->
+        <button type="button" class="popup-button" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
