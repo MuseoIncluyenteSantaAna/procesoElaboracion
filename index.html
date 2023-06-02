@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Proceso de Elaboración del Mezcal</title>
+  <title>Proceso de Elaboración de Mezcal</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
-    /* Estilos adicionales para la página emergente */
-    .popup-content {
-      text-align: center;
-      padding: 20px;
+    /* Estilos adicionales para la página */
+    body {
+      font-family: Arial, sans-serif;
     }
     
-    .popup-image {
-      width: 200px;
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-top: 20px;
+    }
+    
+    .section {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .section-description {
+      margin-bottom: 20px;
+    }
+    
+    .section-image {
+      width: 300px;
       height: 200px;
       object-fit: cover;
       margin-bottom: 10px;
     }
     
-    .popup-description {
-      margin-bottom: 20px;
+    .section-audio {
+      margin-bottom: 10px;
     }
     
-    .popup-button {
+    .section-button {
       display: inline-block;
       background-color: #337ab7;
       color: white;
@@ -32,61 +51,59 @@
       text-decoration: none;
     }
   </style>
-  <script>
-    // Función para mostrar la página emergente al hacer clic en el botón
-    function showPopup() {
-      $('#popup').modal('show');
-    }
-  </script>
 </head>
 <body>
-  <!-- Resto de tu código HTML -->
+  <h1>Proceso de Elaboración de Mezcal 100% Orgánico</h1>
 
-  <!-- Contenido del botón "Proceso de elaboración" -->
-  <div class="section-left">
-    <img src="10.jpg" alt="Imagen izquierda">
-    <p>Conoce nuestro proceso de elaboración</p>
-    <a href="#" class="button" onclick="showPopup()">Click aquí</a>
+  <!-- Sección de Molienda -->
+  <div class="section">
+    <h2 class="section-title">Molienda</h2>
+    <img src="molienda.jpg" alt="Molienda" class="section-image">
+    <p class="section-description">Descripción de la etapa de molienda</p>
+    <audio controls class="section-audio">
+      <source src="molienda.mp3" type="audio/mpeg">
+    </audio>
   </div>
 
-  <!-- Página emergente -->
-  <div class="modal fade" id="popup" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content popup-content">
-        <h2 class="section-title">Proceso de Elaboración del Mezcal</h2>
-        
-        <!-- Primera sección del proceso -->
-        <div class="popup-section">
-          <img src="imagen1.jpg" alt="Imagen 1" class="popup-image">
-          <p class="popup-description">Descripción del paso 1</p>
-          <audio controls>
-            <source src="sonido1.mp3" type="audio/mpeg">
-          </audio>
-        </div>
-        
-        <!-- Segunda sección del proceso -->
-        <div class="popup-section">
-          <img src="imagen2.jpg" alt="Imagen 2" class="popup-image">
-          <p class="popup-description">Descripción del paso 2</p>
-          <audio controls>
-            <source src="sonido2.mp3" type="audio/mpeg">
-          </audio>
-        </div>
-        
-        <!-- Tercera sección del proceso -->
-        <div class="popup-section">
-          <img src="imagen3.jpg" alt="Imagen 3" class="popup-image">
-          <p class="popup-description">Descripción del paso 3</p>
-          <audio controls>
-            <source src="sonido3.mp3" type="audio/mpeg">
-          </audio>
-        </div>
-        
-        <!-- Botón para cerrar la página emergente -->
-        <button type="button" class="popup-button" data-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
+  <!-- Sección de Fermentación -->
+  <div class="section">
+    <h2 class="section-title">Fermentación</h2>
+    <img src="fermentacion.jpg" alt="Fermentación" class="section-image">
+    <p class="section-description">Descripción de la etapa de fermentación</p>
+    <audio controls class="section-audio">
+      <source src="fermentacion.mp3" type="audio/mpeg">
+    </audio>
   </div>
 
+  <!-- Sección de Destilación -->
+  <div class="section">
+    <h2 class="section-title">Destilación</h2>
+    <img src="destilacion.jpg" alt="Destilación" class="section-image">
+    <p class="section-description">Descripción de la etapa de destilación</p>
+    <audio controls class="section-audio">
+      <source src="destilacion.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <!-- Sección de Envasado -->
+  <div class="section">
+    <h2 class="section-title">Envasado</h2>
+    <img src="envasado.jpg" alt="Envasado" class="section-image">
+    <p class="section-description">Descripción de la etapa de envasado</p>
+    <audio controls class="section-audio">
+      <source src="envasado.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <!-- Botón Home -->
+  <div class="section">
+    <a href="https://mezcalorganico.netlify.app" class="section-button">Home</a>
+  </div>
+
+  <!-- Botón de Contacto -->
+  <div class="section">
+    <a href="https://wa.me/tunumerodewhatsapp" class="section-button">Contáctanos</a>
+  </div>
 </body>
 </html>
+
