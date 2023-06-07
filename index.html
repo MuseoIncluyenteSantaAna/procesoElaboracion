@@ -6,6 +6,8 @@
   <style>
     /* Estilos adicionales para la página */
     body {
+      background-color: black;
+      color: white;
       font-family: Arial, sans-serif;
     }
     
@@ -20,11 +22,14 @@
       margin-bottom: 50px;
       padding: 20px;
       text-align: center;
+      border: 2px solid #BAE376;
+      border-radius: 10px;
     }
     
     .section-title {
       font-size: 24px;
       margin-bottom: 10px;
+      color: #BAE376;
     }
     
     .section-description {
@@ -36,6 +41,7 @@
       height: 200px;
       object-fit: cover;
       margin-bottom: 10px;
+      border-radius: 5px;
     }
     
     .section-audio {
@@ -44,11 +50,16 @@
     
     .section-button {
       display: inline-block;
-      background-color: #337ab7;
-      color: white;
+      background-color: #BAE376;
+      color: black;
       padding: 10px 20px;
       border-radius: 5px;
       text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    
+    .section-button:hover {
+      background-color: #9FC658;
     }
   </style>
 </head>
@@ -59,7 +70,7 @@
   <div class="section">
     <h2 class="section-title">Molienda</h2>
     <img src="molienda.jpg" alt="Molienda" class="section-image">
-    <p class="section-description">Descripción de la etapa de molienda</p>
+    <p class="section-description">La etapa de molienda consiste en triturar las piñas de agave cocidas para extraer el mosto, el líquido que será fermentado y destilado posteriormente.</p>
     <audio controls class="section-audio">
       <source src="molienda.mp3" type="audio/mpeg">
     </audio>
@@ -69,7 +80,7 @@
   <div class="section">
     <h2 class="section-title">Fermentación</h2>
     <img src="fermentacion.jpg" alt="Fermentación" class="section-image">
-    <p class="section-description">Descripción de la etapa de fermentación</p>
+    <p class="section-description">Durante la fermentación, el mosto obtenido en la molienda se coloca en tinas de fermentación y se deja reposar para que los azúcares se conviertan en alcohol gracias a la acción de las levaduras naturales presentes en el agave.</p>
     <audio controls class="section-audio">
       <source src="fermentacion.mp3" type="audio/mpeg">
     </audio>
@@ -79,7 +90,7 @@
   <div class="section">
     <h2 class="section-title">Destilación</h2>
     <img src="destilacion.jpg" alt="Destilación" class="section-image">
-    <p class="section-description">Descripción de la etapa de destilación</p>
+    <p class="section-description">En la destilación, el líquido fermentado se calienta en alambiques para separar y concentrar los componentes deseados, obteniendo así el mezcal con su característico sabor y aroma.</p>
     <audio controls class="section-audio">
       <source src="destilacion.mp3" type="audio/mpeg">
     </audio>
@@ -89,7 +100,7 @@
   <div class="section">
     <h2 class="section-title">Envasado</h2>
     <img src="envasado.jpg" alt="Envasado" class="section-image">
-    <p class="section-description">Descripción de la etapa de envasado</p>
+    <p class="section-description">En la etapa de envasado, el mezcal destilado se embotella cuidadosamente para preservar todas sus características organolépticas y mantener su calidad hasta el momento de ser consumido.</p>
     <audio controls class="section-audio">
       <source src="envasado.mp3" type="audio/mpeg">
     </audio>
@@ -106,4 +117,5 @@
   </div>
 </body>
 </html>
+
 
